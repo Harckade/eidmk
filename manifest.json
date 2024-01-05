@@ -1,0 +1,22 @@
+{
+  "name": "Entra ID Master Key (EIDMK)",
+  "version": "1.0",
+  "description": "Bypass Microsoft Entra ID (formerly known as Azure Active Directory) portal restrictions and perform everything you could already do when using PowerShell/CLI but on the UI. Works both on https://portal.azure.com/ and https://entra.microsoft.com/. You may need to enable \"Developer mode\" on the \"chrome://extensions/\"",
+  "manifest_version": 2,
+  "permissions": ["storage", "*://graph.microsoft.com/*", "*://main.iam.ad.ext.azure.com/*", "tabs", "debugger"],
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "EIDMK",
+		"default_popup": "popup.html"
+	},
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
