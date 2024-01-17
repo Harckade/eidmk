@@ -1,11 +1,11 @@
 function setActive () {
   chrome.storage.sync.get(['isActive'], function(item){
     if (item !== undefined && item !== null && item.isActive === true){
-      chrome.browserAction.setBadgeText({ text: '' });
+      chrome.action.setBadgeText({ text: '' });
       chrome.storage.sync.set({ isActive: false });
     }
     else{
-      chrome.browserAction.setBadgeText({ text: 'ON' });
+      chrome.action.setBadgeText({ text: 'ON' });
       chrome.storage.sync.set({ isActive: true });
     }
     window.close();
