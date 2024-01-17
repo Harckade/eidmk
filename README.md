@@ -5,6 +5,7 @@ It works similar to AzureHound by [BloodHoundAD](https://github.com/BloodHoundAD
 > [!WARNING]
 > Harckade is not associated with any entity that is not listed on [Harckade](https://www.harckade.com) official website nor responsible for any damage/content that those entities may produce.
 > This exention provides same functionalities as using PowerShell or CLI - There is NO vulnerabilities being exploited, just taking advantage of Azure portal features
+> Harckade is also not responsible for any abuse of local or global laws or policies that may result from malicious actors that use Harckade's technology.
 
 In fact, even Microsoft official documentation states that the UI restriction does not restrict anyone, who has access to a tenant, from retrieving the information from Entra ID - find out more  on [this article](https://www.linkedin.com/pulse/microsoft-azure-active-directory-authorization-bypass-vlad-yultyyev/).
 
@@ -29,3 +30,6 @@ You need to be a user of particular tenant to view the content of that tenant.
 - **tabs** - Tabs permission is needed to allow extension to open a listener on a specific tab. This is also required to allow multi-tab support, when the user has multiple tenants opened.
 - **debugger** - Needed to intercept requests coming from Azure/Microsoft Entra ID portal and modify the (server) response in order to trick the client (browser) to think that it has all privileges on the UI - this will make the client send additional calls to Microsoft endpoints by following original and unmodified Microsoft JavaScript files.
 - **host** - The extension needs to understand if the HTTP requests are from Microsoft. Only if the requests are coming from Microsoft, the interception and modification of the response will happen.
+
+> [!NOTE]
+> All Harckade and EIDMK logos and images are object of copyright and its usage is **NOT** allowed for the purpose outside of this project. Meaning, that you are not authorized to modify or use any of the logos/images on your own projects and claim them as your property/creation.
